@@ -1,7 +1,8 @@
 import React from "react";
 
-import { Header } from "./components/Header/Header";
-import { Footer } from "./components/Footer/Footer";
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
+import { Catalog } from "./components/Catalog";
 
 import styles from "./App.module.scss";
 
@@ -9,9 +10,7 @@ function App() {
   return (
     <div className={styles.app}>
       <Header />
-      <main className={styles.paintingsCatalog}>
-        <h1 className={styles.title}>Картины эпохи Возрождения</h1>
-      </main>
+      <Catalog />
       <Footer />
     </div>
   );

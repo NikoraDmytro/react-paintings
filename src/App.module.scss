@@ -1,24 +1,9 @@
 @use "./shared/styles/mixins";
-@use "./shared/styles/variables";
 
 .app {
   min-height: 100vh;
   font-family: "Merriweather";
   background-color: #f6f3f3;
-}
-
-.title {
-  margin-top: 0;
-  font-size: 24px;
-  line-height: 1.5em;
-  margin-bottom: 1.5em;
-}
-
-.paintingsCatalog {
-  max-width: 81.25em;
-  margin: 3em auto;
-  width: fit-content;
-  color: variables.$primary;
 }
 
 header,

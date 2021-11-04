@@ -1,6 +1,6 @@
 import React from "react";
 
-import { NavBar } from "../NavBar/NavBar";
+import { NavBar } from "../NavBar/index";
 
 import "./Footer.module.scss";
 

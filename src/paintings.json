@@ -1,0 +1,27 @@
+[
+    {
+        "name": "«Рождение Венеры» Сандро Боттичелли",
+        "img" : "https://s3-alpha-sig.figma.com/img/93cb/4e09/db0eab48a6f2d11e9078fbb3d371082c?Expires=1636934400&Signature=FAfP~FjeNesHGldOsaDvIkNCVXM7QExAXSy5KhGX50HReE9QbjeP9bOlhiy9anIWPJbWxrZ-Qtu37rNHbwbVvEpVnX5UARIg89tvY-tj9Q-3yUrmwtyh8BCXFxSuYdJ6YG0I2d51ajjzoSV6HzKvW3MYN22R32hJmvur4f40lJ6xOL7-nNN-Ap7syYN0z5yrbm6Ag~JUZ5Bb1EyZf82xGPiaA8gqB0BL8yc-4pKT638XNpWkrwOxhYu7lfIJ~sK3I8qtq5BqAg8wjQqUYNJcrXECIX35AXU0NtKQbQwq9-s1sRUS7MuEl782qOPOUoNR-mxI-bmiwtvtApJ0D1zJQQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+        "state": "available",
+        "price" : 2000000,
+        "discount": 1000000
+    }, 
+    {
+        "name": "«Тайная вечеря» Леонардо да Винчи",
+        "img" : "https://s3-alpha-sig.figma.com/img/f59b/7155/0aac165474911d5d44bf154381a23c80?Expires=1636934400&Signature=KddwuXefjoatQFv0-GVO0ewz-tcYKDYL40rsZVatD0OhhMBXw54e8cttenOVjFhREymVjy5xPjJQfhzAgZps2dwsM90a0KCGzyr8gF1M4Yv3EEwlsBJZblZwbD9wECEFfo~AHqUAyW~xZtrCZ7LVGpBPyxTpEfZT-pkub6kblSxFHpFhbC93HTNq0u96HMyq8V~M5CPAfn8i7GLbVWWxDIjrOLYmlyjuqCgsJmvabHYDKMeT-Rfx1M33rUnrjoihUVqUax5Qa7Mhs3cjsClk8P2r6QuF3nMGpkllhwq31RfY-JCUiJWs5PTxFwV968GP994Z87OsqCYkvfqQEL8NMg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+        "state": "available",
+        "price" : 3000000
+    }, 
+    {
+        "name": "«Сотворение Адама» Микеланджело",
+        "img" : "https://s3-alpha-sig.figma.com/img/2ce5/b541/ab91452b4e8213fca3280a88a317496c?Expires=1636934400&Signature=DAaRm1FHB6jV00Jelmt6EaBwTu-CFAufUvbD-dhG-1wlwSh6UldID~9D-cX-5wEbaoJw6zJuosSgmJjRPTBVVlB2l30d3j2na~XZn5IHBFmLTT-efM24f9PvVCnzQpLcIVPeaDJ6oKvLFTiR493UYXAMs7UwpKYgy8vaahyhy8neFnN66Febhs0oCbUvpSSxImhb5ak~Zb3-KxFqJ2WftxtG01z1ehwz0MxkVfin7GU7DiEAXaDR3aLlVb8F~Lsfu-ZdSie6sBSLQyseO~BaSvaUvnraVZjrOyEnyHcpG6zuRF-quP~Z8iqvXU2Cze-p7mRD4VOJY3385vQvEavnlg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+        "state": "available",
+        "price" : 6000000,
+        "discount": 5000000
+    },
+    {
+        "name": "«Урок анатомии» Рембрандт",
+        "img" : "https://s3-alpha-sig.figma.com/img/c258/18a5/1e889515a6516c3d8f8657bce639a5ec?Expires=1636934400&Signature=hVUAgm-XIXrUPVnR2GM-1YARWtFe63f8Lc5YmxwySlKqv-9OsMSSOx5OT1mrqsYjtuZtCM9lIpaZOxAqmRWcPQkMv5Ip3oWGwE5ObpDxOh0YSt5Aa48H0C4UenZXLKQLL6mHpdfLuE7CUOP6kG3XwLiGNKEd-eFiU6iAHuZSZerQCxqnxhkx3wO6ShRNbca-qbPhDPDnTJ8wXSoy0-QMwul9s99WqbLjybwWlTczBJtGWHWxNJRD6i8Fpys9usSlYFabpI4-gk0QFwN4~J3KFJfyAdmC2V1nrMs8J7WQiO4yUDJJhM4qgQRRZt5xSCeCDBP9KDKk4ppzP1QPRB4CAQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+        "state": "sold"
+    }
+]

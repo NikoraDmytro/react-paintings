@@ -1,0 +1,12 @@
+@use "../../../shared/styles/variables";
+
+.paintingCard {
+  width: 17.5em;
+  height: 20.5em;
+  margin-right: 2em;
+  border: variables.$border;
+  img {
+    height: 10em;
+    width: 100%;
+  }
+}
