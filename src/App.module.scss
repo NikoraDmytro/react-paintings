@@ -1,0 +1,52 @@
+@use "./shared/styles/resets";
+@use "./shared/styles/variables";
+
+.app {
+  min-height: 100vh;
+  font-family: "Merriweather";
+  background-color: #f6f3f3;
+}
+
+.navBar {
+  @include resets.resetList();
+  display: flex;
+  flex-direction: row;
+  li {
+    margin-left: 3.5em;
+  }
+}
+
+header,
+footer {
+  height: 6.5em;
+  display: flex;
+  font-size: 14px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  color: variables.$primary;
+  border-bottom: variables.$border;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: variables.$secondary;
+  background-color: variables.$footerBackground;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.light {
+  font-weight: 300;
+}
