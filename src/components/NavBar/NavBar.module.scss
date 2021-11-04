@@ -1,0 +1,10 @@
+@use "../../shared/styles/resets";
+
+.navBar {
+  @include resets.resetList();
+  display: flex;
+  flex-direction: row;
+  li {
+    margin-left: 3.5em;
+  }
+}

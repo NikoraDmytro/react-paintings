@@ -1,0 +1,6 @@
+@use "../../shared/styles/variables";
+
+header {
+  color: variables.$primary;
+  border-bottom: variables.$border;
+}

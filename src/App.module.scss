@@ -1,4 +1,4 @@
-@use "./shared/styles/resets";
+@use "./shared/styles/mixins";
 @use "./shared/styles/variables";
 
 .app {
@@ -7,46 +7,23 @@
   background-color: #f6f3f3;
 }
 
-.navBar {
-  @include resets.resetList();
-  display: flex;
-  flex-direction: row;
-  li {
-    margin-left: 3.5em;
-  }
+.title {
+  margin-top: 0;
+  font-size: 24px;
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.paintingsCatalog {
+  max-width: 81.25em;
+  margin: 3em auto;
+  width: fit-content;
+  color: variables.$primary;
 }
 
 header,
 footer {
+  @include mixins.flexCenter();
   height: 6.5em;
-  display: flex;
   font-size: 14px;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-header {
-  color: variables.$primary;
-  border-bottom: variables.$border;
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  color: variables.$secondary;
-  background-color: variables.$footerBackground;
-}
-
-.regular {
-  font-weight: 400;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-.light {
-  font-weight: 300;
 }
