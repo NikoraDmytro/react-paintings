@@ -1,7 +1,7 @@
 export type Painting = {
   img: string;
   name: string;
-  state: string;
-  price?: number;
+  state: "sold" | "available" | "inCart";
+  price: number;
   discount?: number;
 };

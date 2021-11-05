@@ -4,6 +4,8 @@ import { PaintingCard } from "./components/PaintingCard";
 
 import paintings from "../../paintings.json";
 
+import { Painting } from "../../shared/types/Painting";
+
 import styles from "./Paintings.module.scss";
 
 export const Catalog = () => {
@@ -13,7 +15,7 @@ export const Catalog = () => {
 
       <ul className={styles.paintingsList}>
         {paintings.map((painting) => (
-          <PaintingCard key={painting.name} painting={painting} />
+          <PaintingCard key={painting.name} painting={painting as Painting} />
         ))}
       </ul>
     </div>

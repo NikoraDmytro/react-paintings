@@ -22,6 +22,7 @@
     {
         "name": "«Урок анатомии» Рембрандт",
         "img" : "https://s3-alpha-sig.figma.com/img/c258/18a5/1e889515a6516c3d8f8657bce639a5ec?Expires=1636934400&Signature=hVUAgm-XIXrUPVnR2GM-1YARWtFe63f8Lc5YmxwySlKqv-9OsMSSOx5OT1mrqsYjtuZtCM9lIpaZOxAqmRWcPQkMv5Ip3oWGwE5ObpDxOh0YSt5Aa48H0C4UenZXLKQLL6mHpdfLuE7CUOP6kG3XwLiGNKEd-eFiU6iAHuZSZerQCxqnxhkx3wO6ShRNbca-qbPhDPDnTJ8wXSoy0-QMwul9s99WqbLjybwWlTczBJtGWHWxNJRD6i8Fpys9usSlYFabpI4-gk0QFwN4~J3KFJfyAdmC2V1nrMs8J7WQiO4yUDJJhM4qgQRRZt5xSCeCDBP9KDKk4ppzP1QPRB4CAQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
-        "state": "sold"
+        "state": "sold",
+        "price" : 1
     }
 ]

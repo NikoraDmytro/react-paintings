@@ -1,0 +1,13 @@
+@use "./variables";
+@use "./mixins";
+@use "./resets";
+
+button {
+  @include mixins.setSize(112px, 48px);
+  @include resets.resetButton;
+  color: white;
+  background-color: variables.$button;
+  &:hover {
+    background-color: variables.$hooveredButton;
+  }
+}

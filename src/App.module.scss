@@ -1,7 +1,9 @@
 @use "./shared/styles/mixins";
+@use "./shared/styles/components";
 
 .app {
   min-height: 100vh;
+  line-height: 1.5em;
   font-family: "Merriweather";
   background-color: #f6f3f3;
 }
@@ -9,6 +11,6 @@
 header,
 footer {
   @include mixins.flexCenter();
-  height: 6.5em;
+  @include mixins.setSize(100%, 6.5em);
   font-size: 14px;
 }
