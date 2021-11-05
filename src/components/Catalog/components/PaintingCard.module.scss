@@ -1,12 +1,36 @@
 @use "../../../shared/styles/variables";
+@use "../../../shared/styles/mixins";
 
 .paintingCard {
-  width: 17.5em;
-  height: 20.5em;
+  @include mixins.setSize(17.5em, 20.5em);
   margin-right: 2em;
   border: variables.$border;
-  img {
-    height: 10em;
-    width: 100%;
-  }
+}
+
+.paintingImage {
+  @include mixins.setSize(100%, 10em);
+}
+
+.paintingName {
+  margin: 0;
+  font-size: 18px;
+}
+
+.paintingInfo {
+  padding: 1.5em;
+  padding-top: 1.25em;
+}
+
+.buyPaintingSection {
+  @include mixins.flexCenter();
+  height: 3em;
+  margin-top: 1.375em;
+  justify-content: space-between;
+}
+
+.discount {
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+  color: variables.$discount;
 }
