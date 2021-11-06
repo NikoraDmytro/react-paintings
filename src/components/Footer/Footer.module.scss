@@ -1,8 +1,28 @@
 @use "../../shared/styles/variables";
+@use "../../shared/styles/mixins";
 
 footer {
   bottom: 0;
   position: absolute;
   color: variables.$secondary;
   background-color: variables.$footerBackground;
+}
+
+.contacts {
+  display: flex;
+  margin-left: 152px;
+  flex-direction: row;
+  > div {
+    @include mixins.flexCenter();
+  }
+}
+
+.address {
+  margin-left: 32px;
+}
+
+.icon {
+  @include mixins.setSize(1em);
+  margin-right: 8px;
+  object-fit: scale-down;
 }

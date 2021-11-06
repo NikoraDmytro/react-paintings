@@ -1,6 +1,30 @@
 @use "../../shared/styles/variables";
+@use "../../shared/styles/mixins";
 
 header {
   color: variables.$primary;
   border-bottom: variables.$border;
+}
+
+.searchBar {
+  display: inline-block;
+  margin-left: 185px;
+  button {
+    width: 122px;
+  }
+}
+
+.searchField {
+  @include mixins.setFontParams(14px);
+  @include mixins.setSize(21em, 48px);
+  outline: none;
+  padding-left: 16px;
+  border: variables.$border;
+  border-right: none;
+  &::placeholder {
+    color: variables.$searchPlaceholder;
+  }
+  &:focus {
+    border: variables.$activeBorder;
+  }
 }

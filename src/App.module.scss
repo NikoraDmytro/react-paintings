@@ -15,6 +15,6 @@ input {
 header,
 footer {
   @include mixins.flexCenter();
-  @include mixins.setSize(100%, 6.5em);
+  @include mixins.setSize(100%, 96px);
   @include mixins.setFontParams(14px);
 }
