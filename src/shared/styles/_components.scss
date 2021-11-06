@@ -11,4 +11,7 @@ button {
   &:hover {
     background-color: variables.$hooveredButton;
   }
+  &:disabled {
+    background-color: variables.$disabledButton;
+  }
 }

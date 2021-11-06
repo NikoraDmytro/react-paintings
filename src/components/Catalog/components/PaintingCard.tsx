@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { Painting } from "../../../shared/types/Painting";
 
@@ -6,26 +6,35 @@ import { parsePrice } from "../../../utils/parsePrice";
 
 import styles from "./PaintingCard.module.scss";
 
-interface paintingCardProps {
-  painting: Painting;
-}
-
-export const PaintingCard = ({ painting }: paintingCardProps) => {
+export const PaintingCard = ({ painting }: { painting: Painting }) => {
+  const [loading, setLoading] = useState(false);
   const { name, img, state, price, discount } = painting;
 
+  const handleClick = async () => {
+    try {
+      setLoading(true);
+      await fetch("https://reqres.in/api/users?delay=3");
+      setLoading(false);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   const isSold = state === "sold";
-  const soldPaintingStyling = isSold ? " " + styles.sold : "";
 
-  let currentPrice = "Продана на аукционе";
-  let oldPrice: string | null = null;
+  const oldPrice = !isSold && discount ? parsePrice(price) : null;
+  const currentPrice = isSold
+    ? "Продана на аукционе"
+    : parsePrice(discount || price);
 
-  if (!isSold) {
-    currentPrice = parsePrice(discount || price);
-    oldPrice = discount ? parsePrice(price) : null;
+  let button = <button onClick={handleClick}>Купить</button>;
+
+  if (loading) {
+    button = <button disabled>...</button>;
   }
 
   return (
-    <li className={styles.paintingCard + soldPaintingStyling}>
+    <li className={styles.paintingCard + (isSold ? " " + styles.sold : "")}>
       <img className={styles.paintingImage} src={img} alt="Crash" />
 
       <div className={styles.paintingInfo}>
@@ -37,7 +46,7 @@ export const PaintingCard = ({ painting }: paintingCardProps) => {
             <strong>{currentPrice}</strong>
           </div>
 
-          {!isSold && <button>Купить</button>}
+          {!isSold && button}
         </div>
       </div>
     </li>
