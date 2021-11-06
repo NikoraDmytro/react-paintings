@@ -3,7 +3,8 @@
 @use "./resets";
 
 button {
-  @include mixins.setSize(112px, 48px);
+  @include mixins.setFontParams(14px, bold);
+  @include mixins.setSize(118px, 48px);
   @include resets.resetButton;
   color: white;
   background-color: variables.$button;

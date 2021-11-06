@@ -3,22 +3,26 @@
 
 .paintingCard {
   @include mixins.setSize(17.5em, 20.5em);
+  display: flex;
   margin-right: 2em;
-  border: variables.$border;
+  flex-direction: column;
 }
 
 .paintingImage {
   @include mixins.setSize(100%, 10em);
+  object-fit: cover;
+  border: variables.$border;
 }
 
 .paintingName {
+  @include mixins.setFontParams(18px);
   margin: 0;
-  font-size: 18px;
 }
 
 .paintingInfo {
   padding: 1.5em;
   padding-top: 1.25em;
+  border: variables.$border;
 }
 
 .buyPaintingSection {
@@ -29,8 +33,11 @@
 }
 
 .discount {
+  @include mixins.setFontParams(14px, 300);
   display: block;
-  font-size: 14px;
-  font-weight: 300;
   color: variables.$discount;
+}
+
+.sold {
+  opacity: 0.5;
 }

@@ -14,6 +14,7 @@ export const PaintingCard = ({ painting }: paintingCardProps) => {
   const { name, img, state, price, discount } = painting;
 
   const isSold = state === "sold";
+  const soldPaintingStyling = isSold ? " " + styles.sold : "";
 
   let currentPrice = "Продана на аукционе";
   let oldPrice: string | null = null;
@@ -24,7 +25,7 @@ export const PaintingCard = ({ painting }: paintingCardProps) => {
   }
 
   return (
-    <li className={styles.paintingCard}>
+    <li className={styles.paintingCard + soldPaintingStyling}>
       <img className={styles.paintingImage} src={img} alt="Crash" />
 
       <div className={styles.paintingInfo}>
